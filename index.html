@@ -44,6 +44,12 @@
             border-radius: 5px;
             overflow-x: auto;
         }
+        .note {
+            background-color: #fff8e1;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+        }
     </style>
 </head>
 <body>
@@ -53,6 +59,10 @@
     <h2>VCC(ALCOM)で簡単インストール</h2>
     <p>下記のボタンをクリックするだけで、VCC(ALCOM)にリポジトリを追加できます：</p>
     <a href="vcc://vpm/addRepo?url=https://i21i.github.io/vpm-repos/vpm.json" class="button">VCC(ALCOM)に追加</a>
+
+    <div class="note">
+        <p><strong>補足：</strong>上記のボタンクリックでリポジトリの追加ができない場合は、以下の手動インストール手順をお試しください。ブラウザによっては「vcc://」から始まるリンクが正しく機能しないことがあります。</p>
+    </div>
     
     <h2>VCC手動インストール</h2>
     <div class="install-steps">
