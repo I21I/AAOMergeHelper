@@ -1,0 +1,13 @@
+{
+  "name": "jp.21csx.aao-merge-helper",
+  "displayName": "(21)'s AAO Merge Helper",
+  "description": "AAOのMergeSkinnedMesh, MergePhysBoneを簡単に設定できるツール",
+  "version": "1.0.2",
+  "unity": "2022.3",
+  "author": {
+    "name": "二十一世紀症候群"
+  },
+  "vpmDependencies": {
+    "com.anatawa12.avatar-optimizer": ">=1.8.10"
+  }
+}
