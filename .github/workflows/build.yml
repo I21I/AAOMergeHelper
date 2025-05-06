@@ -1,0 +1,34 @@
+name: Build Release
+on:
+  push:
+    tags:
+      - 'v*'
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Get Version
+        id: get_version
+        run: echo "VERSION=${GITHUB_REF#refs/tags/v}" >> $GITHUB_ENV
+      
+      - name: Update Package.json Version
+        run: |
+          sed -i "s/\"version\": \"[0-9.]*\"/\"version\": \"${{ env.VERSION }}\"/g" package.json
+          cat package.json
+      
+      - name: Create Package
+        run: |
+          mkdir -p build
+          zip -r build/jp.21csx.aao-merge-helper-${{ env.VERSION }}.zip . -x "*.git*" "build/*" ".github/*" "vpm.json" "index.html" "favicon.png" ".nojekyll"
+      
+      - name: Create Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: |
+            build/jp.21csx.aao-merge-helper-${{ env.VERSION }}.zip
+          draft: false
+          prerelease: false
