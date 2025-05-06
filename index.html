@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AAO Merge Helper - VPMインストール</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        .button {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+        .button:hover {
+            background-color: #2980b9;
+        }
+        .install-steps {
+            background-color: #f8f9fa;
+            border-left: 4px solid #3498db;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        pre {
+            background-color: #f1f1f1;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>AAO Merge Helper</h1>
+    <p>Avatar Optimizerのマージ機能を簡単に設定するツールです。</p>
+    
+    <h2>VCC(ALCOM)で簡単インストール</h2>
+    <p>下記のボタンをクリックするだけで、VCC(ALCOM)にリポジトリを追加できます：</p>
+    <a href="vcc://vpm/addRepo?url=https://i21i.github.io/vpm-repos/vpm.json" class="button">VCC(ALCOM)に追加</a>
+    
+    <h2>VCC手動インストール</h2>
+    <div class="install-steps">
+        <ol>
+            <li>VCCを開き、「Settings」タブを選択</li>
+            <li>「Packages」タブをクリック</li>
+            <li>「Add Repository」ボタンをクリック</li>
+            <li>以下のURLを入力：</li>
+        </ol>
+        <pre>https://i21i.github.io/vpm-repos/vpm.json</pre>
+        <ol start="5">
+            <li>「Add」ボタンをクリック</li>
+            <li>「I Understand, Add Repository」をクリックして確認</li>
+            <li>「Projects」タブを開き、「Manage Project」から「AAO Merge Helper」をインストール</li>
+        </ol>
+    </div>
+
+    <h2>ALCOM手動インストール</h2>
+    <div class="install-steps">
+        <ol>
+            <li>ALCOMを開き、「パッケージ管理」タブを選択</li>
+            <li>「VPMリポジトリを追加」ボタンをクリック</li>
+            <li>以下のURLを入力：</li>
+        </ol>
+        <pre>https://i21i.github.io/vpm-repos/vpm.json</pre>
+        <ol start="5">
+            <li>「VPMリポジトリを追加」ボタンをクリック</li>
+            <li>再度「VPMリポジトリを追加」ボタンをクリック</li>
+            <li>「プロジェクト」タブを開き、「管理」から「AAO Merge Helper」をインストール</li>
+        </ol>
+    </div>
+    
+    <h2>機能</h2>
+    <ul>
+        <li>AAOのMergeSkinnedMeshとMergePhysBoneを自動でセット</li>
+        <li>オブジェクトのトグル制御のフィルタに対応(一部ツール)</li>
+        <li>改変軽量化作業の効率化</li>
+    </ul>
+    
+    <h2>動作環境</h2>
+    <ul>
+        <li>Unity 2022.3.22f1</li>
+        <li>VRCSDK3 3.8.1-beta.1</li>
+        <li>Avatar Optimizer 1.8.10</li>
+    </ul>
+    
+    <h2>お問い合わせ</h2>
+    <p>不具合やお問い合わせについては<a href="https://x.com/pnpnrkgk">𝕏 / Twitter</a>または<a href="https://l21l.booth.pm/">Booth</a>からお願いします。</p>
+    
+    <footer>
+        <p>© 2024 二十一世紀症候群</p>
+    </footer>
+</body>
+</html>
