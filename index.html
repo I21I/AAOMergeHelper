@@ -23,13 +23,11 @@
             display: inline-block;
             background-color: #475bf5;
             color: white;
-            padding: 10px 30px;
+            padding: 10px 20px;
             text-decoration: none;
             border-radius: 5px;
             font-weight: bold;
-            white-space: nowrap;
-            text-align: center;
-            min-width: 200px;
+            margin: 20px 0;
         }
         .button:hover {
             background-color: #3649ca;
@@ -56,14 +54,6 @@
             background-color: #ffebee;
             border-left: 4px solid #e53935;
             padding: 15px;
-            margin-left: 20px;
-            flex: 1;
-            display: flex;
-            align-items: center;
-        }
-        .flex-container {
-            display: flex;
-            align-items: center;
             margin: 20px 0;
         }
     </style>
@@ -73,13 +63,11 @@
     <p>Avatar Optimizerのマージ機能を簡単に設定するツールです。</p>
     
     <h2>VCC(ALCOM)で簡単インストール</h2>
-    <p>下記のボタンをクリックするだけで、VCC(ALCOM)にリポジトリを追加できます：</p>
+    <p>下記のボタンをクリックするだけで、VCC(ALCOM)にリポジトリを追加できます。</p>
+    <a href="vcc://vpm/addRepo?url=https://i21i.github.io/vpm-repos/vpm.json" class="button">VCC(ALCOM)に追加</a>
     
-    <div class="flex-container">
-        <a href="vcc://vpm/addRepo?url=https://i21i.github.io/vpm-repos/vpm.json" class="button">VCC(ALCOM)に追加</a>
-        <div class="warning">
-            unitypackage版を導入済みの方はプロジェクトから削除してからお使いください。競合の原因となります。
-        </div>
+    <div class="warning">
+        <p><strong>注意：</strong>unitypackage版を導入済みの方はプロジェクトから削除してからお使いください。競合の原因となります。</p>
     </div>
     
     <div class="note">
