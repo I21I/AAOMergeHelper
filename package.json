@@ -12,5 +12,5 @@
   "documentationUrl": "https://i21i.github.io/AAOMergeHelper/",
   "vpmDependencies": {
     "com.anatawa12.avatar-optimizer": ">=1.8.10"
-  },
+  }
 }
