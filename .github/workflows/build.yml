@@ -25,6 +25,12 @@ jobs:
           mkdir -p build
           zip -r build/jp.21csx.aao-merge-helper-${{ env.VERSION }}.zip . -x "*.git*" "build/*" ".github/*" "vpm.json" "index.html" "favicon.png" ".nojekyll"
       
+      - name: Calculate Checksum
+        run: |
+          CHECKSUM=$(sha256sum build/jp.21csx.aao-merge-helper-${{ env.VERSION }}.zip | awk '{ print $1 }')
+          echo "CHECKSUM=${CHECKSUM^^}" >> $GITHUB_ENV
+          echo "Checksum: ${CHECKSUM^^}"
+      
       - name: Create Release
         uses: softprops/action-gh-release@v1
         with:
