@@ -53,6 +53,10 @@
             background-color: #fff8e1;
             border-left: 4px solid #ffc107;
         }
+        .warning {
+            background-color: #ffebee;
+            border-left: 4px solid #e53935;
+        }
     </style>
 </head>
 <body>
@@ -62,6 +66,10 @@
     <h2>VCC(ALCOM)で簡単インストール</h2>
     <p>下記のボタンをクリックするだけで、VCC(ALCOM)にリポジトリを追加できます。</p>
     <a href="vcc://vpm/addRepo?url=https://i21i.github.io/vpm-repos/vpm.json" class="button">VCC(ALCOM)に追加</a>
+
+    <div class="warning">
+        <p><strong>注意：</strong>unitypackage版を導入済みの方はプロジェクトから削除してからお使いください。競合の原因となります。</p>
+    </div>
     
     <div class="note">
         <p><strong>補足：</strong>上記のボタンクリックでリポジトリの追加ができない場合は、以下の手動インストール手順をお試しください。ブラウザによっては「vcc://」から始まるリンクが正しく機能しないことがあります。</p>
