@@ -13,7 +13,4 @@
   "vpmDependencies": {
     "com.anatawa12.avatar-optimizer": ">=1.8.10"
   },
-  "legacyFolders": {
-    "Assets/AAOMergeHelper/Editor": "bdda1c435ac1cee4ab9f12a91379317a"
-  }
 }
