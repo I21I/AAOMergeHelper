@@ -782,13 +782,7 @@ public class MergeSkinnedMeshHandler
 
     private bool ArePathsEqual(string path1, string path2)
     {
-        var path1Parts = path1.Split('/');
-        var path2Parts = path2.Split('/');
-
-        var path1Rest = string.Join("/", path1Parts.Skip(1));
-        var path2Rest = string.Join("/", path2Parts.Skip(1));
-
-        return path1Rest == path2Rest;
+        return path1.Equals(path2, System.StringComparison.Ordinal);
     }
 
     private GameObject FindObjectFromPath(string path)
