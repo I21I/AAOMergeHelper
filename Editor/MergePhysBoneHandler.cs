@@ -11,7 +11,6 @@ using UnityEngine;
 using UnityEditor;
 using VRC.SDK3.Dynamics.PhysBone.Components;
 using VRC.Dynamics;
-using nadena.dev.modular_avatar.core;
 using System.Collections.Generic;
 using System.Linq;
 
